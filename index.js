@@ -3,7 +3,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello from Azure App Service 🌥️!');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.listen(port, () => {
